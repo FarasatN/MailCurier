@@ -1,0 +1,22 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="OtpApp.MainWindow"
+        Title="OTP Sender" Width="400" Height="600">
+	<StackPanel Margin="10">
+		<TextBox x:Name="OtpContent" Watermark="OTP Content" Margin="5"/>
+
+		<TextBox x:Name="EmailAddress" Watermark="Your Email Address" Margin="5"/>
+		<TextBox x:Name="Password" Watermark="Your Email Password" Margin="5" PasswordChar="*"/>
+		<TextBox x:Name="RecipientEmails" Watermark="Recipient Emails (comma separated)" Margin="5" IsEnabled="False"/>
+		<TextBox x:Name="PhoneNumbers" Watermark="Phone Numbers (comma separated)" Margin="5" IsEnabled="False"/>
+
+		<StackPanel Orientation="Horizontal" Margin="5">
+			<CheckBox x:Name="SendByEmail" Content="Send by Email" IsChecked="True" Margin="5"
+                      Checked="OnSendByEmailChecked" Unchecked="OnSendByEmailUnchecked"/>
+			<CheckBox x:Name="SendByPhone" Content="Send by Phone" IsChecked="True" Margin="5"
+                      Checked="OnSendByPhoneChecked" Unchecked="OnSendByPhoneUnchecked"/>
+		</StackPanel>
+
+		<Button x:Name="SendOtpButton" Content="Send OTP" Click="OnSendOtpClick" Margin="5"/>
+	</StackPanel>
+</Window>

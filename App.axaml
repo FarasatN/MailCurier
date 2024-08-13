@@ -1,0 +1,23 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="MailCurier.App"
+             RequestedThemeVariant="Light">
+	<!--RequestedThemeVariant="Default">-->
+	<!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+	<Application.Styles>
+		<FluentTheme/>
+		<!--<StyleSelector>
+			<Style Selector="Button:enabled">
+				<Setter Property="Background" Value="DarkGreen"/>
+				<Setter Property="Foreground" Value="White"/>
+				<Setter Property="BorderBrush" Value="DarkGreen"/>
+			</Style>
+			<Style Selector="Button:disabled">
+				<Setter Property="Background" Value="Gray"/>
+				<Setter Property="Foreground" Value="LightGray"/>
+				<Setter Property="BorderBrush" Value="Gray"/>
+			</Style>
+		</StyleSelector>-->
+	</Application.Styles>
+</Application>
